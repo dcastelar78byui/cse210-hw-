@@ -1,9 +1,20 @@
 using System;
 
-class Program
+namespace games
 {
-    static void Main(string[] args)
+    class Program18
     {
-        Console.WriteLine("Hello Prep1 World!");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello Prep1 World!");
+            string name = "";
+            string surname = "";
+            Console.Write("What is your first name?.");
+            name = Console.ReadLine();
+            Console.Write("What is your last name?.");
+            surname = Console.ReadLine();
+
+            Console.WriteLine($"Your name is {surname}, {name} {surname}.");
+        }
     }
 }
