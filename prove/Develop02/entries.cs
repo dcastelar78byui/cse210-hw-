@@ -15,5 +15,10 @@ public class Entry
         _date = DateTime.Now;
     }
 
+        public override string ToString()
+    {
+        return $"[{_date}] {_prompt}: {_response}";
+    }
+
 }
 
