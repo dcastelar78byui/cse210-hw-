@@ -48,7 +48,7 @@ class Program
                     break;
 
                 default :
-                    Console.WriteLine("error de numero");
+                    Console.WriteLine("Error");
                     return;
                 
             }

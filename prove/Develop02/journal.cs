@@ -25,7 +25,7 @@ public class Journal
 
     public static void NewEntry() 
     {
-            Console.WriteLine("Ha seleccionado New Entry");
+            Console.WriteLine("You Choose New Entry");
 
             string prompt;
             string answer;
@@ -49,16 +49,17 @@ public class Journal
             Console.WriteLine("Entry added");  
         
     }
-    public static string RandomPromptSunday()
+
+        public static string RandomPromptSunday()
     {
-        Console.WriteLine("Estoy en Random");
+        Console.WriteLine("Its Sunday");
         Random rand = new Random();
         int index = rand.Next(_sundayList.Count);
         return _sundayList[index];
     }
     public static string RandomPrompt()
     {
-        Console.WriteLine("Estoy en Random");
+        Console.WriteLine("Random");
         Random rand = new Random();
         int index = rand.Next(_promptList.Count);
         return _promptList[index];
@@ -93,7 +94,7 @@ public class Journal
         
         }
 
-        Console.WriteLine("Journal saved to file!");
+        Console.WriteLine("Journal saved");
     }
 
     public static void LoadJ()
@@ -119,7 +120,7 @@ public class Journal
             entries.Add(newEntry);
             
         }
-        Console.WriteLine("Journal loaded from file!");
+        Console.WriteLine("Journal loaded");
     }
 
     
