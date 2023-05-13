@@ -38,7 +38,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Not passed!")
+            Console.WriteLine("Not passed!");
         }    
 
         
