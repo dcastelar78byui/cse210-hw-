@@ -35,8 +35,9 @@ public class ListingActivity : Activity
 
     public override void DisplayEndActivity()
     {
-        base.DisplayEndActivity();
-        Console.WriteLine("Fin");
+        //base.DisplayEndActivity();
+        int nList = _activitiesResponseList.Count;
+        Console.WriteLine($"You listed {nList}");
     }
 
     public void InitListiningActivity()

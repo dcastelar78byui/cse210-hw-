@@ -5,16 +5,17 @@ class Program
     static void Main(string[] args)
     {
         int choice = 9;
-        while (choice != 4)
+        while (choice != 5)
         {
             Console.WriteLine("");
             Console.WriteLine("Welcome to the Activity Program.");
             Console.WriteLine("  1-Breathing Activity");
             Console.WriteLine("  2-Reflecting Activity");
             Console.WriteLine("  3-Listing Activity");
-            Console.WriteLine("  4-Exit");
+            Console.WriteLine("  4-Relaxing Music");
+            Console.WriteLine("  5-Exit");
             Console.WriteLine("");
-            Console.Write("Enter your choice(1-4):  ");
+            Console.Write("Enter your choice(1-5):  ");
 
             choice = Convert.ToInt32(Console.ReadLine());
 
@@ -29,7 +30,12 @@ class Program
                 case 3:
                     InitListiningActivity();
                     break;
+
                 case 4:
+                    InitRelaxingActivity();
+                    break;
+
+                case 5:
                     break;
 
                 default:
@@ -69,6 +75,16 @@ class Program
         ListingActivity listingActivity = new ListingActivity(act,descrip,seconds);
         listingActivity.InitListiningActivity();
                         
+    }
+
+        public static void InitRelaxingActivity()
+    {
+        string act = "Relaxing Activity";
+        string descrip = "This activity will help you relax";
+        int seconds = 10;
+
+        RelaxingActivity relaxingActivity = new RelaxingActivity(act,descrip,seconds);
+        relaxingActivity.StartRelaxingActivity();
     }
 
 
