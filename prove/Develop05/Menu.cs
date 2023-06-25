@@ -1,8 +1,8 @@
 abstract class Menu
 {
-    private string _description;
-    private List<string> _options;
-    private string _prompt;
+    protected string _description;
+    protected List<string> _options;
+    protected string _prompt;
 
     public Menu(string description, List<string> options, string prompt)
     {
@@ -23,5 +23,5 @@ abstract class Menu
         return input;
     }
     
-    public Show();
+    public abstract int Show();
 }
