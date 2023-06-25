@@ -63,6 +63,7 @@ class ChecklistGoal : CompletableGoal
             return 0;
         }
     }
+    //
 
     public override string ToSavedString()
     {

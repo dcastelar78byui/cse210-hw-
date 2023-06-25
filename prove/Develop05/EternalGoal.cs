@@ -30,3 +30,4 @@ class EternalGoal : Goal
         return $"{"EternalGoal"},{Name},{_description},{_points}";
     }
 }
+//

@@ -43,3 +43,4 @@ abstract class Goal
         return string.Format("Name: {0}\nDescription: {1}\nPoints: {2}", _name, _description, _points);
     }
 }
+//

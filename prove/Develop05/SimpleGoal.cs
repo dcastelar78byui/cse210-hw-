@@ -44,3 +44,4 @@ class SimpleGoal : CompletableGoal
         return $"{"SimpleGoal"},{Name},{_description},{_points},{_isComplete}";
     }
 }
+//
