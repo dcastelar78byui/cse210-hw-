@@ -26,7 +26,11 @@ class Activity
         return 0;
     }
 
-    public virtual string GetSummary()
+    public virtual string GetSummaryKM()
+    {
+        return string.Empty;
+    }
+    public virtual string GetSummaryMi()
     {
         return string.Empty;
     }
